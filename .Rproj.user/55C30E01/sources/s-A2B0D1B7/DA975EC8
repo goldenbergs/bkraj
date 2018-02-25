@@ -1,20 +1,20 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1519591758900.000,
+    "created" : 1519595698275.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1046413993",
-    "id" : "E81058D3",
+    "hash" : "1542943790",
+    "id" : "DA975EC8",
     "lastKnownWriteTime" : 1519583884,
     "last_content_update" : 1519583884,
-    "path" : "F:/bkraj/bkraj/blogdown/content/home/publications.md",
-    "project_path" : "content/home/publications.md",
+    "path" : "F:/bkraj/bkraj/index.Rmd",
+    "project_path" : "index.Rmd",
     "properties" : {
     },
-    "relative_order" : 8,
+    "relative_order" : 1,
     "source_on_save" : false,
     "source_window" : "",
-    "type" : "markdown"
+    "type" : "r_markdown"
 }

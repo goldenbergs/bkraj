@@ -37,4 +37,4 @@ weight = 5
 +++
 
 # Biography
-I am is a post-doctoral fellow in Tovi Lehmann's group in the Laboratory of Malaria and Vector Research at the NIH. I earned my doctorate in microbiology at Colorado State University studying the use of ivermectin as a malaria control measure. My current work focuses on the dry-season persistence mechanisms of *Anopheles* spp. mosquitoes in Mali.
+I am a post-doctoral fellow in Tovi Lehmann's group in the Laboratory of Malaria and Vector Research at the NIH. I earned my doctorate in microbiology at Colorado State University studying the use of ivermectin as a malaria control measure. My current work focuses on the dry-season persistence mechanisms of *Anopheles* spp. mosquitoes in Mali.
