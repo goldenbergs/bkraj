@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "1049161477",
     "id" : "954906F3",
-    "lastKnownWriteTime" : 1519601677,
-    "last_content_update" : 1519601677334,
+    "lastKnownWriteTime" : 1519602026,
+    "last_content_update" : 1519602026361,
     "path" : "F:/bkraj/bkraj/content/talk/example-talk.md",
     "project_path" : "content/talk/example-talk.md",
     "properties" : {
-        "cursorPosition" : "40,115",
-        "scrollLine" : "12"
+        "cursorPosition" : "36,11",
+        "scrollLine" : "15"
     },
     "relative_order" : 4,
     "source_on_save" : false,
