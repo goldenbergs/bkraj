@@ -1,12 +1,12 @@
 +++
 # Date this page was created.
-date = "2016-04-27"
+date = "2018-02-25"
 
 # Project title.
-title = "Deep Learning"
+title = "Seasonal change in the microbiome of *Anopheles coluzzii*"
 
 # Project summary to display on homepage.
-summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+summary = "Using"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "bubbles.jpg"

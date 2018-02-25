@@ -1,20 +1,20 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1519595698275.000,
+    "created" : 1519601207175.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1542943790",
-    "id" : "DA975EC8",
+    "hash" : "2509744933",
+    "id" : "9DE0E8DB",
     "lastKnownWriteTime" : 1519583884,
     "last_content_update" : 1519583884,
-    "path" : "F:/bkraj/bkraj/index.Rmd",
-    "project_path" : "index.Rmd",
+    "path" : "F:/bkraj/bkraj/content/talk/_index.md",
+    "project_path" : "content/talk/_index.md",
     "properties" : {
     },
-    "relative_order" : 1,
+    "relative_order" : 3,
     "source_on_save" : false,
     "source_window" : "",
-    "type" : "r_markdown"
+    "type" : "markdown"
 }

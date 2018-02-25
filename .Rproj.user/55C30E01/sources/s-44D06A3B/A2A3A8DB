@@ -1,21 +1,21 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1519595700192.000,
+    "created" : 1519599601797.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "0",
-    "id" : "690B7EA0",
-    "lastKnownWriteTime" : 1519591465,
-    "last_content_update" : 1519591465,
+    "id" : "A2A3A8DB",
+    "lastKnownWriteTime" : 1519600640,
+    "last_content_update" : 1519600640169,
     "path" : "F:/bkraj/bkraj/config.toml",
     "project_path" : "config.toml",
     "properties" : {
-        "cursorPosition" : "60,15",
-        "scrollLine" : "64"
+        "cursorPosition" : "252,11",
+        "scrollLine" : "252"
     },
-    "relative_order" : 2,
+    "relative_order" : 5,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "toml"

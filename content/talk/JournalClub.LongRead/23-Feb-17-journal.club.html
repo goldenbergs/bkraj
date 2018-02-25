@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="author" content="Ben Krajacich" />
+    <link rel="stylesheet" href="https:\\cdn.rawgit.com\benkraj\nih_xaringan\master\nih3.css" type="text/css" />
+    <link rel="stylesheet" href="https:\\cdn.rawgit.com\benkraj\nih_xaringan\master\nih-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# </br>
+## Short Overview of Portable Long Read Sequencers
+### Ben Krajacich
+### NIH Journal Club </br> 2018-02-21
+
+---
+
+class: center, middle
+
+# Disclaimer
+
+--
+
+##Not an expert...
+
+---
+class: center, middle
+![](phillippy.jpg)
+???
+And Sergey Koren at the National Human Genome Research Institute (NHGRI)
+---
+layout: false
+.left-column[
+  ### **Overview of Next Generation Sequencing**
+]
+
+---
+layout: false
+.left-column[
+  ### **Overview of Next Generation Sequencing**
+  
+  
+  ### Illumina:
+  #### 
+]
+
+--
+
+.right-column[
+![:scale 65%](illumina.jpg)
+- Churko *et al.* 2013
+]
+
+---
+layout: false
+.left-column[
+  ### **Overview of Next Generation Sequencing**
+  
+  
+  ### Illumina:
+  
+  ### Issues with short reads:
+]
+
+--
+
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+### - **Repeat regions** or areas with low complexity may be lost
+![](repeats.jpg)
+]
+.footnote[Image from Torsten Seemann]
+
+
+---
+layout: false
+.left-column[
+  ### **Overview of Next Generation Sequencing**
+  
+  
+  ### Illumina:
+  
+  ### Issues with short reads:
+]
+
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+### - Short reads make **genome assembly** difficult 
+]
+
+.right-column[
+![](untangle.jpg)
+.footnote[Image from Torsten Seemann]
+]
+
+---
+
+layout: false
+.left-column[
+  ### **Genome size**
+]
+
+---
+layout: false
+.left-column[
+  ### **Genome size**
+  
+  
+  ### Huge range:
+]
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+![](genomesize.jpg) 
+]
+
+???
+1 kb = 1000 bases - thousand
+
+
+1 Mb = 1,000,000 bases - million
+
+
+1 Gb = 1,000,000,000 bases - billion
+
+---
+layout: false
+.left-column[
+  ### **Genome size**
+  
+  
+  ### Huge range:
+]
+
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+![](tulip.jpg) 
+]
+.footnote[Image from Christiaan Henkel - https://www.youtube.com/watch?v=zRHCaaEfVvo]
+
+???
+But why do we care? Aren't these weird artifacts?
+
+---
+layout: false
+.left-column[
+  ### **Even "good" genomes have troubles:**
+]
+
+--
+
+.right-column[
+### **First human genome** - 2003
+![](firsthuman.jpg)
+.footnote[Image from Sergey Koren]
+]
+
+???
+NG50 is the median contig length
+
+---
+layout: false
+.left-column[
+  ### **Even "good" genomes have troubles:**
+]
+
+.right-column[
+### Current **best** human genome 
+![](GRCh38.jpg)
+.footnote[Image from Sergey Koren]
+]
+
+???
+Primary reason behind this is repeats and other non-complex regions, so then---what about longer reads?
+
+---
+layout: false
+.left-column[
+  ### **What about longer reads?**
+]
+
+--
+
+.right-column[
+### - Pacbio has introduced longer reads up to 60 kb.
+![](pacreadlength.jpg)
+.footnote[https://www.pacb.com/smrt-science/smrt-sequencing/read-lengths/]
+]
+
+---
+layout: false
+.left-column[
+  ### **What about longer reads?**
+]
+
+.right-column[
+### - Though it is expensive, and error prone until high coverage.
+![](PacBioAccuracy.JPG)
+]
+.footnote[https://www.pacb.com/uncategorized/a-closer-look-at-accuracy-in-pacbio/]
+
+---
+
+class: center, middle
+#Nanopore Overview:
+
+&lt;iframe width="560" height="315" src="http://www.youtube.com/embed/E9-Rm5AoZGw?rel=0?start=0&amp;end=147" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+layout: false
+.left-column[
+  ### **Nanopore Machines:**
+]
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+![](nanoporeline.jpg)
+]
+---
+layout: false
+.left-column[
+  ### **Comparing technologies:**
+]
+
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;  &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Illumina &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; PacBio &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Nanopore &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Instrument &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; HiSeq 2500 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Sequel &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; MinION &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Read Length &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 50-250 bp &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10-15 kb &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Up to 900 kb &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Error Rate &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0.5-1% &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10-15% &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 5-15% &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Output &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ~25 Gb/Lane &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 5 - 10 Gb &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10-20 Gb &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Instrument Price &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; $740,000 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; $350,000 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; $1000** &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Run Price &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ~$1300 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; ~$850 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; $500-$900 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+---
+layout:false
+.left-column[
+ ### **Unique Aspects:**
+]
+---
+
+.left-column[
+ ### **Unique Aspects:**
+ 
+ 
+ ### Portable**:
+]
+.right-column[
+![](portable.jpg)
+]
+.foot-note[https://www.nature.com/news/pint-sized-dna-sequencer-impresses-first-users-1.17483]
+---
+layout: false
+.left-column[
+ ### **Unique Aspects:**
+ 
+ 
+ ### Portable**:
+ 
+
+ ### Nanopore reads can be **very** long:
+]
+
+.right-column[
+![:scale 75%](longreadsLOMAN.jpg)
+#### Longest aligned reads: 778217, 771227, 671129, 646399, 603564, 55941, 553029, 494330, 487836, and 470664 bases
+]
+.foot-note[http://lab.loman.net/2017/03/09/ultrareads-for-nanopore/]
+
+???
+Newest chemistry has bases going through the pore at 250 bases/second
+
+---
+.left-column[
+  ### **What can you do with long reads?**
+]
+
+---
+
+.left-column[
+  ### **What can you do with long reads?**
+  
+  
+  ### Span repeats.
+]
+
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+![](spangaps.jpg)
+]
+
+---
+layout: FALSE
+.left-column[
+  ### **What can you do with long reads?**
+  
+  
+  ### Span repeats.
+  
+  
+  ### Lengthen contigs (clean up assemblies)
+]
+
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+![](cliveome.jpg)
+]
+.footnote[### Image from Sergey Koren]
+
+---
+layout: FALSE
+.left-column[
+  ### **What can you do with long reads?**
+  
+  
+  ### Span repeats.
+  
+  
+  ### Lengthen contigs (clean up assemblies)
+]
+
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+![](hic.jpg)
+]
+.footnote[### Image from Sergey Koren]
+
+---
+layout: FALSE
+.left-column[
+  ### **What can you do with long reads?**
+  
+  
+  ### Span repeats.
+  
+  
+  ### Lengthen contigs (clean up assemblies)
+  
+  
+  ### Amplify **repeat regions** of interest
+]
+
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+### Like **telomeres**
+![](telomere.jpg)
+]
+.footnote[### Image from Sergey Koren]
+
+---
+layout: FALSE
+.left-column[
+  ### **What can you do with long reads?**
+  
+  
+  ### Span repeats.
+  
+  
+  ### Lengthen contigs (clean up assemblies)
+  
+  
+  ### Amplify repeat regions of interest
+  
+  
+  ### Detect Splicing Variants
+]
+
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+![:scale 35%](altsplicing.jpg)
+]
+.footnote[CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=6642977]
+
+---
+
+class: center, middle
+![](title.jpg)
+
+???
+- About 6 months old
+
+
+- 5Gb per RNA flowcell at max due to the different motor protein.
+---
+layout: false
+.left-column[
+  ## **Study Overview:**
+]
+.right-column[
+- Study investigated direct (1D) and complemented (cDNA - 2D) RNA-sequencing of yeast mRNA (100-500 ng) on the MinION platform
+compared to Illumina (100bp Paired-End).
+]
+--
+.right-column[
+- Used direct-RNA sequencing to analyze the External RNA Controls Consortium (ERCC) Panel (mixture of 92 poly-adenylated RNAs of known size/concentration).
+]
+--
+.right-column[
+- To detect splice isoforms, used the Spike in RNA Variants (SIRV) reference panel.
+]
+--
+.right-column[
+- Also determined ability to detect modified transcripts (methylated adenosine and cytosine) as they come through the pore.
+]
+---
+.left-column[
+## Why sequence direct from RNA? 
+]
+--
+.right-column[
+### - Can avoid confounders from PCR amplification related to GC content or duplication events.
+![](duplication.jpg)
+.foot-note[https://www.slideshare.net/AustralianBioinformatics/felicity-newell-ngs-mapping-errors-and-quality-control]
+]
+
+
+---
+.left-column[
+## Why sequence direct from RNA? 
+]
+
+.right-column[
+### - Modifications on the transcripts are maintained ("epitranscriptomics").
+![](modifications.jpg)
+.foot-note[###*Licht and Jantsch, The Journal of Cell Biology, 2016*]
+]
+
+---
+layout: false
+.left-column[
+  ## Figure 1b:
+]
+.right-column[
+![:scale 85%](figure1b.jpg)
+### Example 'squiggle' of transcript moving through pore.
+]
+
+---
+layout: false
+.left-column[
+  ## Figure 1b:
+  ## Supp. Fig. 1:
+]
+.right-column[
+![](readlength.jpg)
+ ### Read lengths for direct RNA and cDNA.
+]
+
+---
+layout: false
+.left-column[
+  ## Figure 1b:
+  ## Supp. Fig. 1:
+  ## Supp. Fig. 2a:
+]
+.right-column[
+![:scale 75%](readaccuracy.jpg)
+ ### Read accuracy for direct RNA.
+]
+
+---
+layout: false
+.left-column[
+  ## Figure 1b:
+  ## Supp. Fig. 1:
+  ## Supp. Fig. 2a:
+  ## Figure 2a:
+]
+.right-column[
+![:scale 70%](figure2a.jpg)
+ ### Correlation of read counts after mapping.
+]
+
+---
+layout: false
+.left-column[
+  ## Figure 1b:
+  ## Supp. Fig. 1:
+  ## Supp. Fig. 2a:
+  ## Figure 2a:
+  ## Figure 3a:
+]
+.right-column[
+![:scale 65%](Figure3a.jpg)
+ ### ERCC reference library spike-in read counts.
+]
+---
+layout: false
+.left-column[
+  ## Figure 1b:
+  ## Supp. Fig. 1:
+  ## Supp. Fig. 2a:
+  ## Figure 2a:
+  ## Figure 3a:
+  ## Figure 4:
+]
+.right-column[
+![:scale 130%](figure4.jpg)
+]
+---
+layout: false
+.left-column[
+  ## Figure 1b:
+  ## Supp. Fig. 1:
+  ## Supp. Fig. 2a:
+  ## Figure 2a:
+  ## Figure 3a:
+  ## Figure 4:
+  ## Figure 5:
+]
+.right-column[
+![:scale 70%](figure5.jpg)
+ ### Detection of modified bases.
+]
+---
+layout: false
+.left-column[
+ ## **Criticisms:**
+]
+--
+.right-column[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+- **Error rate** is still high, though is reduced with higher coverage and 2D reads.
+]
+--
+.right-column[
+- Kits are still cold-chain limited, so **"portability"** is a bit tough to see.
+]
+--
+.right-column[
+- **500ng** minimum starting material for RNA is a bit high for some samples.
+]
+--
+.right-column[
+- Demonstration of **splice isoform** and **modified base** detection a bit weak.
+]
+    </textarea>
+<script src="libs/remark-latest.min.js"></script>
+<script src="https://cdn.rawgit.com/benkraj/nih_xaringan/master/ru_xaringan.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
