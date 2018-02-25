@@ -38,4 +38,6 @@ caption = "My caption :smile:"
 
 +++
 
+<iframe src=https://rawgit.com/benkraj/bkraj/master/content/talk/JournalClub.LongRead/23-Feb-17-journal.club.html#1" width="900" height="780" style="border: none;"></iframe>
+
 Embed your slides or video here using [shortcodes](https://sourcethemes.com/academic/post/writing-markdown-latex/). Further details can easily be added using *Markdown* and $\rm \LaTeX$ math code.
