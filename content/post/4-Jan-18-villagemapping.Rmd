@@ -1,0 +1,47 @@
+---
+title: "4-Jan-18-mapping.village.locations"
+output: html_document
+categories: ["R"]
+tags: ["R Markdown", "maps", "Mali"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Mapping Villages
+
+This is a bit of code mapping each of the study villages in Mali.
+
+Making the data frame of points:
+```{r}
+library('leaflet')
+library('knitr')
+df <- data.frame(site=c("Thierola", "Siguima", "Markabougou", "Dallowere", "Niono", 
+                        "Konani", "Diessourouna", "Torodo", "Zanga", "M'Piabougou", 
+                        "N'Gabakoro", "Bia", "Guemou"),
+                 latitude = c(13.6586, 14.16762, 13.91442, 13.61576, 14.223473, 
+                              13.9513, 13.9289, 13.0791, 13.688050, 13.599830, 
+                              12.683870, 10.42, 14.5476),
+                 longitude = c(-7.21471, -7.22793, -6.34382, -7.03689, -6.051057, 
+                               -6.9708, -6.7094, -8.3589, -7.221029, -7.192859, 
+                               -7.840419, -5.87, -9.31067))
+kable(df)
+```
+
+
+# Map of Village locations
+
+```{r}
+leaflet(data=df) %>% 
+  addTiles(group = "OSM (default)") %>% 
+  addProviderTiles('Esri.WorldImagery', group="ESRI.WorldImagery") %>%
+  addProviderTiles("CartoDB.PositronOnlyLabels", group="ESRI.WorldImagery") %>%
+  addMarkers(~longitude, ~latitude, popup = ~as.character(site)) %>%
+  addLayersControl(
+    baseGroups = c("OSM (default)", "ESRI.WorldImagery"),
+    options = layersControlOptions(collapsed = FALSE)
+  ) 
+
+```
+
