@@ -3,8 +3,7 @@ title = "Investigation of the seasonal microbiome of *Anopheles coluzzii* in Mal
 date = "2015-09-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Benjamin J Krajacich", "Diana L. Huestis", "Adama Dao", "Alpha S. Yaro",
-"Moussa Diallo", "Asha Krishna", "Jiannong Xu", "Tovi Lehmann"]
+authors = ["Benjamin J Krajacich", "Diana L. Huestis", "Adama Dao", "Alpha S. Yaro", "Moussa Diallo", "Asha Krishna", "Jiannong Xu", "Tovi Lehmann"]
 
 # Publication type.
 # Legend:
@@ -22,32 +21,7 @@ publication = "PeerJ Preprint"
 publication_short = "PeerJ Preprint"
 
 # Abstract and optional shortened version.
-abstract = "The poorly understood mechanisms of the seasonal maintenance of Anopheles spp.
-mosquitoes through the dry season in Africa remain a critical gap in our knowledge of
-Plasmodium disease transmission. While it is thought that adult mosquitoes remain in a
-dormant state throughout this seven-month dry season, the nature of this state remains
-unknown and has largely not been recapitulated in laboratory settings. To elucidate
-possible life history traits allowing for this phenotype, the spatiotemporal change in the
-microbiome of mosquitoes in the dry and wet seasons in Mali was analyzed by sequencing
-the 16S ribosome bacterial region in whole bodies of adult mosquitoes collected from two
-locations with varying water availability. These locations were a village near the Niger
-River with year-round water sources (N’Gabakoro, “Riparian”), and an area closer to the
-Sahara with highly seasonal breeding sites (Thierola Area, “Sahelian”). The 16S bacterial
-data consisted of 2057 unique sequence variants in 426 genera across 184 families. With
-these, we found several compositional differences that were seasonally and spatially
-linked. Counter to our initial hypothesis, there was a more pronounced seasonal difference
-in the bacterial microbiome in the Riparian than Sahelian area. These major seasonal shifts
-were in Ralstonia, Sphingorhabdus, and Duganella spp. bacteria that are usually soil and
-water-associated, indicating that these changes may be from bacteria acquired in the
-larval environment, rather than during adulthood. In the Sahelian dry season mosquitoes,
-there was a unique intracellular bacteria, Anaplasma, which likely was acquired through
-non-human blood feeding. Coupled with this finding, cytochrome B analysis showed a
-greater heterogeneity in host choice of An. coluzzii independent of season in the Thierola
-area compared to N’Gabakoro (77.5% vs. 94.6% human-origin blood meal, respectively),
-which may indicate a relaxation of anthropophily in some locations. This study highlights
-the diversity present in the bacterial composition of individual mosquitoes, characterizes
-the spatial and seasonal differences in this composition, and indicates some possible
-qualitative biomarkers in areas of intense seasonal change."
+abstract = "The poorly understood mechanisms of the seasonal maintenance of Anopheles spp. mosquitoes through the dry season in Africa remain a critical gap in our knowledge of Plasmodium disease transmission. While it is thought that adult mosquitoes remain in a dormant state throughout this seven-month dry season, the nature of this state remains unknown and has largely not been recapitulated in laboratory settings. To elucidate possible life history traits allowing for this phenotype, the spatiotemporal change in the microbiome of mosquitoes in the dry and wet seasons in Mali was analyzed by sequencing the 16S ribosome bacterial region in whole bodies of adult mosquitoes collected from two locations with varying water availability. These locations were a village near the Niger River with year-round water sources (N’Gabakoro, “Riparian”), and an area closer to the Sahara with highly seasonal breeding sites (Thierola Area, “Sahelian”). The 16S bacterial data consisted of 2057 unique sequence variants in 426 genera across 184 families. With these, we found several compositional differences that were seasonally and spatially linked. Counter to our initial hypothesis, there was a more pronounced seasonal difference in the bacterial microbiome in the Riparian than Sahelian area. These major seasonal shifts were in Ralstonia, Sphingorhabdus, and Duganella spp. bacteria that are usually soil and water-associated, indicating that these changes may be from bacteria acquired in the larval environment, rather than during adulthood. In the Sahelian dry season mosquitoes, there was a unique intracellular bacteria, Anaplasma, which likely was acquired through non-human blood feeding. Coupled with this finding, cytochrome B analysis showed a greater heterogeneity in host choice of An. coluzzii independent of season in the Thierola area compared to N’Gabakoro (77.5% vs. 94.6% human-origin blood meal, respectively), which may indicate a relaxation of anthropophily in some locations. This study highlights the diversity present in the bacterial composition of individual mosquitoes, characterizes the spatial and seasonal differences in this composition, and indicates some possible qualitative biomarkers in areas of intense seasonal change."
 abstract_short = ""
 
 # Featured image thumbnail (optional)
