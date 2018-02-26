@@ -1,6 +1,6 @@
 +++
-title = "Investigation of the seasonal microbiome of *Anopheles coluzzii* in Mali"
-date = "2015-09-01"
+title = "Investigation of the seasonal microbiome of Anopheles coluzzii in Mali"
+date = "2017-11-03"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Benjamin J Krajacich", "Diana L. Huestis", "Adama Dao", "Alpha S. Yaro", "Moussa Diallo", "Asha Krishna", "Jiannong Xu", "Tovi Lehmann"]
