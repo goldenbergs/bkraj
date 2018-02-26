@@ -2,8 +2,8 @@
 date = 2017-01-01T00:00:00  # Schedule page publish date.
 
 title = "Journal Club -- A short overview of portable long read sequencers."
-time_start = 2018-02-21T14:00:00
-time_end = 2018-02-21T15:00:00
+time_start = 2018-02-21T16:00:00
+time_end = 2018-02-21T17:00:00
 abstract = ""
 abstract_short = ""
 event = "NIH Journal Club"
