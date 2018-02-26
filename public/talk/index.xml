@@ -8,17 +8,18 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Ben Krajacich</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Example Talk</title>
+      <title>Journal Club -- A short overview of portable long read sequencers.</title>
       <link>/talk/example-talk/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>/talk/example-talk/</guid>
-      <description>Embed your slides or video here using shortcodes. Further details can easily be added using Markdown and $\rm \LaTeX$ math code.</description>
+      <description>&lt;iframe src=&#34;https://rawgit.com/benkraj/talks/master/JournalClub.LongRead/23-Feb-17-journal.club.html#1&#34; width=&#34;900&#34; height=&#34;780&#34; style=&#34;border: none;&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;This was a talk I gave to our journal club on the use of long-read sequencers for genomics and RNA analysis.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

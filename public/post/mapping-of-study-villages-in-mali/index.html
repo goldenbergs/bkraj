@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.32.2" />
+  <meta name="author" content="Ben Krajacich">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="Mapping VillagesThis is a bit of code mapping each of the study villages in Mali.
+Making the data frame of points:
+library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),latitude = c(13.6586, 14.16762, 13.91442, 13.61576, 14.223473, 13.9513, 13.9289, 13.0791, 13.688050, 13.599830, 12.683870, 10.42, 14.5476),longitude = c(-7.21471, -7.22793, -6.34382, -7.03689, -6.051057, -6.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/mapping-of-study-villages-in-mali/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-114753151-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Ben Krajacich">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Ben Krajacich">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/mapping-of-study-villages-in-mali/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@bkraj">
+  <meta property="twitter:creator" content="@bkraj">
+  
+  <meta property="og:site_name" content="Ben Krajacich">
+  <meta property="og:url" content="/post/mapping-of-study-villages-in-mali/">
+  <meta property="og:title" content="Mapping of Study Villages in Mali | Ben Krajacich">
+  <meta property="og:description" content="Mapping VillagesThis is a bit of code mapping each of the study villages in Mali.
+Making the data frame of points:
+library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),latitude = c(13.6586, 14.16762, 13.91442, 13.61576, 14.223473, 13.9513, 13.9289, 13.0791, 13.688050, 13.599830, 12.683870, 10.42, 14.5476),longitude = c(-7.21471, -7.22793, -6.34382, -7.03689, -6.051057, -6.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-02-25T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-02-25T00:00:00&#43;00:00">
+  
+
+  
+
+  <title>Mapping of Study Villages in Mali | Ben Krajacich</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Ben Krajacich</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#talks">
+            
+            <span>Talks</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Mapping of Study Villages in Mali</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-02-25 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Feb 25, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Ben Krajacich">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/r">R</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Mapping%20of%20Study%20Villages%20in%20Mali&amp;url=%2fpost%2fmapping-of-study-villages-in-mali%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2fmapping-of-study-villages-in-mali%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fmapping-of-study-villages-in-mali%2f&amp;title=Mapping%20of%20Study%20Villages%20in%20Mali"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fmapping-of-study-villages-in-mali%2f&amp;title=Mapping%20of%20Study%20Villages%20in%20Mali"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Mapping%20of%20Study%20Villages%20in%20Mali&amp;body=%2fpost%2fmapping-of-study-villages-in-mali%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/leaflet-label/leaflet.label.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet-label/leaflet.label.js"></script>
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<script src="/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+<script src="/rmarkdown-libs/leaflet-providers/leaflet-providers.js"></script>
+<script src="/rmarkdown-libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+
+
+<div id="mapping-villages" class="section level2">
+<h2>Mapping Villages</h2>
+<p>This is a bit of code mapping each of the study villages in Mali.</p>
+<p>Making the data frame of points:</p>
+<pre class="r"><code>library(&#39;leaflet&#39;)
+library(&#39;knitr&#39;)
+df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, 
+                        &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, 
+                        &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),
+                 latitude = c(13.6586, 14.16762, 13.91442, 13.61576, 14.223473, 
+                              13.9513, 13.9289, 13.0791, 13.688050, 13.599830, 
+                              12.683870, 10.42, 14.5476),
+                 longitude = c(-7.21471, -7.22793, -6.34382, -7.03689, -6.051057, 
+                               -6.9708, -6.7094, -8.3589, -7.221029, -7.192859, 
+                               -7.840419, -5.87, -9.31067))
+kable(df)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">site</th>
+<th align="right">latitude</th>
+<th align="right">longitude</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Thierola</td>
+<td align="right">13.65860</td>
+<td align="right">-7.214710</td>
+</tr>
+<tr class="even">
+<td align="left">Siguima</td>
+<td align="right">14.16762</td>
+<td align="right">-7.227930</td>
+</tr>
+<tr class="odd">
+<td align="left">Markabougou</td>
+<td align="right">13.91442</td>
+<td align="right">-6.343820</td>
+</tr>
+<tr class="even">
+<td align="left">Dallowere</td>
+<td align="right">13.61576</td>
+<td align="right">-7.036890</td>
+</tr>
+<tr class="odd">
+<td align="left">Niono</td>
+<td align="right">14.22347</td>
+<td align="right">-6.051057</td>
+</tr>
+<tr class="even">
+<td align="left">Konani</td>
+<td align="right">13.95130</td>
+<td align="right">-6.970800</td>
+</tr>
+<tr class="odd">
+<td align="left">Diessourouna</td>
+<td align="right">13.92890</td>
+<td align="right">-6.709400</td>
+</tr>
+<tr class="even">
+<td align="left">Torodo</td>
+<td align="right">13.07910</td>
+<td align="right">-8.358900</td>
+</tr>
+<tr class="odd">
+<td align="left">Zanga</td>
+<td align="right">13.68805</td>
+<td align="right">-7.221029</td>
+</tr>
+<tr class="even">
+<td align="left">M’Piabougou</td>
+<td align="right">13.59983</td>
+<td align="right">-7.192859</td>
+</tr>
+<tr class="odd">
+<td align="left">N’Gabakoro</td>
+<td align="right">12.68387</td>
+<td align="right">-7.840419</td>
+</tr>
+<tr class="even">
+<td align="left">Bia</td>
+<td align="right">10.42000</td>
+<td align="right">-5.870000</td>
+</tr>
+<tr class="odd">
+<td align="left">Guemou</td>
+<td align="right">14.54760</td>
+<td align="right">-9.310670</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="map-of-village-locations" class="section level1">
+<h1>Map of Village locations</h1>
+<pre class="r"><code>leaflet(data=df) %&gt;% 
+  addTiles(group = &quot;OSM (default)&quot;) %&gt;% 
+  addProviderTiles(&#39;Esri.WorldImagery&#39;, group=&quot;ESRI.WorldImagery&quot;) %&gt;%
+  addProviderTiles(&quot;CartoDB.PositronOnlyLabels&quot;, group=&quot;ESRI.WorldImagery&quot;) %&gt;%
+  addMarkers(~longitude, ~latitude, popup = ~as.character(site)) %&gt;%
+  addLayersControl(
+    baseGroups = c(&quot;OSM (default)&quot;, &quot;ESRI.WorldImagery&quot;),
+    options = layersControlOptions(collapsed = FALSE)
+  ) </code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM (default)",{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"ESRI.WorldImagery",{"errorTileUrl":"","noWrap":false,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false}]},{"method":"addProviderTiles","args":["CartoDB.PositronOnlyLabels",null,"ESRI.WorldImagery",{"errorTileUrl":"","noWrap":false,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false}]},{"method":"addMarkers","args":[[13.6586,14.16762,13.91442,13.61576,14.223473,13.9513,13.9289,13.0791,13.68805,13.59983,12.68387,10.42,14.5476],[-7.21471,-7.22793,-6.34382,-7.03689,-6.051057,-6.9708,-6.7094,-8.3589,-7.221029,-7.192859,-7.840419,-5.87,-9.31067],null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Thierola","Siguima","Markabougou","Dallowere","Niono","Konani","Diessourouna","Torodo","Zanga","M'Piabougou","N'Gabakoro","Bia","Guemou"],null,null,null,null,null,null]},{"method":"addLayersControl","args":[["OSM (default)","ESRI.WorldImagery"],[],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[10.42,14.5476],"lng":[-9.31067,-5.87]}},"evals":[],"jsHooks":[]}</script>
+</div>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/mali">Mali</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/m">M</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/r-markdown">R Markdown</a>
+  
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/post/4-jan-18-villagemapping/">4-Jan-18-mapping.village.locations</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 Ben Krajacich &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

@@ -1,9 +1,16 @@
 ---
-title: "4-Jan-18-mapping.village.locations"
-output: html_document
-categories: ["R"]
-tags: ["R Markdown", "maps", "Mali"]
+title: Mapping of Study Villages in Mali
+author: Ben Krajacich
+date: '2018-02-25'
+slug: mapping-of-study-villages-in-mali
+categories:
+  - R
+tags:
+  - Mali
+  - M
+  - R Markdown
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

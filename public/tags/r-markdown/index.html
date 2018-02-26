@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.32.2" />
   <meta name="author" content="Ben Krajacich">
 
   
@@ -93,7 +93,7 @@
   <meta property="og:description" content="Post-doctoral fellow">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2015-07-23T21:13:14-05:00">
+  <meta property="og:updated_time" content="2018-02-25T00:00:00&#43;00:00">
   
 
   
@@ -194,9 +194,9 @@
         
 
         <li class="nav-item">
-          <a href="/#projects">
+          <a href="/#talks">
             
-            <span>Projects</span>
+            <span>Talks</span>
             
           </a>
         </li>
@@ -263,16 +263,33 @@
   
   
   <div>
-    <h2><a href="/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a></h2>
+    <h2><a href="/post/mapping-of-study-villages-in-mali/">Mapping of Study Villages in Mali</a></h2>
     <div class="article-style">
       
-      R Markdown
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" target="_blank">http://rmarkdown.rstudio.com</a>.
-You can embed an R code chunk like this:
-summary(cars)</p>
-
-<h2 id="speed-dist-min-4-0-min-2-00-1st-qu-12-0-1st-qu-26-00-median-15-0-median-36-00-mean-15-4-mean-42-98-3rd-qu">speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</h2>
-
+      Mapping Villages
+This is a bit of code mapping each of the study villages in Mali.
+Making the data frame of points:
+library(&#39;leaflet&#39;)
+library(&#39;knitr&#39;)
+df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),
+latitude = c(13.6586, 14.16762, 13.91442, 13.61576, 14.223473, 13.9513, 13.9289, 13.0791, 13.688050, 13.599830, 12.683870, 10.42, 14.5476),
+longitude = c(-7.21471, -7.22793, -6.34382, -7.03689, -6.051057, -6.
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/post/4-jan-18-villagemapping/">4-Jan-18-mapping.village.locations</a></h2>
+    <div class="article-style">
+      
+      Mapping Villages
+This is a bit of code mapping each of the study villages in Mali.
+Making the data frame of points:
+library(&#39;leaflet&#39;)
+library(&#39;knitr&#39;)
+df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),
+latitude = c(13.6586, 14.16762, 13.91442, 13.61576, 14.223473, 13.9513, 13.9289, 13.0791, 13.688050, 13.599830, 12.683870, 10.42, 14.5476),
+longitude = c(-7.21471, -7.22793, -6.34382, -7.03689, -6.051057, -6.
       
     </div>
   </div>
