@@ -20,7 +20,7 @@ projects = [""]
 
 # Links (optional).
 url_pdf = ""
-url_slides = "https://rawgit.com/benkraj/talks/master/JournalClub.LongRead/JournalClub.LongRead/23-Feb-17-journal.club.html#1"
+url_slides = "https://rawgit.com/benkraj/talks/master/JournalClub.LongRead/23-Feb-17-journal.club.html#1"
 url_video = ""
 url_code = ""
 
@@ -38,6 +38,6 @@ caption = ""
 
 +++
 
-<iframe src="https://rawgit.com/benkraj/talks/master/JournalClub.LongRead/JournalClub.LongRead/23-Feb-17-journal.club.html#1" width="900" height="780" style="border: none;"></iframe>
+<iframe src="https://rawgit.com/benkraj/talks/master/JournalClub.LongRead/23-Feb-17-journal.club.html#1" width="900" height="780" style="border: none;"></iframe>
 
 Embed your slides or video here using [shortcodes](https://sourcethemes.com/academic/post/writing-markdown-latex/). Further details can easily be added using *Markdown* and $\rm \LaTeX$ math code.
