@@ -40,4 +40,4 @@ caption = ""
 
 <iframe src="https://rawgit.com/benkraj/talks/master/JournalClub.LongRead/23-Feb-17-journal.club.html#1" width="900" height="780" style="border: none;"></iframe>
 
-Embed your slides or video here using [shortcodes](https://sourcethemes.com/academic/post/writing-markdown-latex/). Further details can easily be added using *Markdown* and $\rm \LaTeX$ math code.
+This was a talk I gave to our journal club on the use of long-read sequencers for genomics and RNA analysis.
