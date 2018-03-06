@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "2011766637",
     "id" : "B1C063C",
-    "lastKnownWriteTime" : 1519605615,
-    "last_content_update" : 1519605615,
+    "lastKnownWriteTime" : 1520347915,
+    "last_content_update" : 1520347915295,
     "path" : "~/GitHub/bkraj/content/home/about.md",
     "project_path" : "content/home/about.md",
     "properties" : {
-        "cursorPosition" : "39,28",
-        "scrollLine" : "19"
+        "cursorPosition" : "39,230",
+        "scrollLine" : "11"
     },
     "relative_order" : 3,
     "source_on_save" : false,
