@@ -13,6 +13,7 @@ weight = 5
     "Dry-season ecology",
     "Next-generation Sequencing",
     "R",
+    "Open Science",
     "Field Work!"
   ]
 

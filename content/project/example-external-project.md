@@ -12,8 +12,8 @@ summary = "An example of linking directly to an external project website using `
 image_preview = "boards.jpg"
 
 # Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["demo"]
+# Example: `tags = ["Anopheles", "aestivation", "dry-season ecology"]`
+tags = ["Anopheles", "aestivation", "dry-season ecology"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "http://example.org"
