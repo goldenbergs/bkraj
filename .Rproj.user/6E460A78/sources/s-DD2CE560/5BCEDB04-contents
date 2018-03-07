@@ -1,5 +1,5 @@
 +++
-title = "Analysis of near infrared spectra for age-grading of wild populations of <i>Anopheles gambiae</i>"
+title = "Analysis of near infrared spectra for age-grading of wild populations of Anopheles gambiae"
 date = "2017-11-07"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
