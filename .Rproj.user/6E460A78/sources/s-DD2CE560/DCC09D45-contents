@@ -1,6 +1,5 @@
 +++
-title = "Vaccination with the variable tick protein of the relapsing fever spirochete Borrelia hermsii
-protects mice from infection by tick-bite"
+title = "Vaccination with the variable tick protein of the relapsing fever spirochete Borrelia hermsii protects mice from infection by tick-bite"
 date = "2015-10-21"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
