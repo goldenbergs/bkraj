@@ -1,5 +1,5 @@
 +++
-title = "Analysis of near infrared spectra for age-grading of wild populations of *Anopheles gambiae*"
+title = "Analysis of near infrared spectra for age-grading of wild populations of <i>Anopheles gambiae</i>"
 date = "2017-11-07"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -55,7 +55,7 @@ highlight = true
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "nirs.overview.tif"
+image = "nirs.overview.jpg"
 caption = ""
 
 +++
