@@ -34,11 +34,11 @@ leaflet(data=df, width="100%") %>%
              radius=~sqrt(Population)/5, 
              label = ~htmlEscape(Villages),
              labelOptions = lapply(1:nrow(df), function(x) {
-               labelOptions(opacity=0.6, noHide = T,
+               labelOptions(opacity=0.4, noHide = T,
                             direction = 'right', textOnly = TRUE)
              }),
              popup = paste("<b>Village:</b>", df$Villages, "<br>","<b>Population:</b>", df$Population),
-             popupOptions = popupOptions(bringToTop = TRUE)) %>%
+             popupOptions = popupOptions(opacity=1, bringToTop = TRUE)) %>%
   addLayersControl(
     baseGroups = c("OSM (default)", "ESRI.WorldImagery"),
     options = layersControlOptions(collapsed = FALSE)
