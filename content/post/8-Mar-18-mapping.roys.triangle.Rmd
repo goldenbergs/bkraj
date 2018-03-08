@@ -22,7 +22,7 @@ library('crosstalk')
 
 df <- read_xlsx("C:/OneDrive/OneDrive - National Institutes of Health/Mali 2016/Copy of Villages of triangle.xlsx")
 
-leaflet(data=df) %>% 
+leaflet(data=df, width="100%") %>% 
   addTiles(group = "OSM (default)") %>% 
   addProviderTiles('Esri.WorldImagery', group="ESRI.WorldImagery") %>%
   addProviderTiles("CartoDB.PositronOnlyLabels", group="ESRI.WorldImagery") %>%
