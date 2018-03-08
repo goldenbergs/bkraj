@@ -1,0 +1,49 @@
+---
+title: Mapping Roy's Triangle
+author: Ben Krajacich
+date: '2018-03-08'
+slug: mapping-roy-s-triangle
+categories: []
+tags: []
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Mapping Villages
+
+This is a bit of code mapping each of the study villages in Mali.
+
+Making the data frame of points:
+```{r}
+library('ggmap')
+library('leaflet')
+library('readxl')
+library('htmltools')
+library('crosstalk')
+
+
+df <- read_xlsx("C:/OneDrive/OneDrive - National Institutes of Health/Mali 2016/Copy of Villages of triangle.xlsx")
+
+leaflet(data=df, width="100%") %>% 
+  addTiles(group = "OSM (default)") %>% 
+  addProviderTiles('Esri.WorldImagery', group="ESRI.WorldImagery") %>%
+  addProviderTiles("CartoDB.PositronOnlyLabels", group="ESRI.WorldImagery") %>%
+  addCircleMarkers(~Longitude, ~Latitude, 
+             radius=~sqrt(Population)/5, 
+             label = ~htmlEscape(Villages),
+             labelOptions = lapply(1:nrow(df), function(x) {
+               labelOptions(opacity=0.6, noHide = T,
+                            direction = 'right', textOnly = TRUE)
+             }),
+             popup = paste("<b>Village:</b>", df$Villages, "<br>","<b>Population:</b>", df$Population),
+             popupOptions = popupOptions(bringToTop = TRUE)) %>%
+  addLayersControl(
+    baseGroups = c("OSM (default)", "ESRI.WorldImagery"),
+    options = layersControlOptions(collapsed = FALSE)
+  ) 
+
+```
+
+
