@@ -11,7 +11,7 @@ weight = 5
 [interests]
   interests = [
     "Dry-season ecology",
-    "Next-generation Sequencing",
+    "Next-generation sequencing",
     "R",
     "Open Science",
     "Field Work!"
@@ -38,4 +38,4 @@ weight = 5
 +++
 
 # Biography
-I am a post-doctoral fellow in the Laboratory of Malaria and Vector Research at the NIH. I earned my doctorate in microbiology at Colorado State University studying the use of ivermectin as a malaria control measure in West Africa. My current work focuses on the dry-season persistence mechanisms of *Anopheles* spp. mosquitoes in Mali.
+I am a vector ecologist and microbiologist in the Laboratory of Malaria and Vector Research at the NIH. I earned my doctorate in microbiology at Colorado State University studying the use of ivermectin as a malaria control measure in West Africa. My current work focuses on the dry-season persistence mechanisms of *Anopheles* spp. mosquitoes in Mali. Outside of work I like to ski, rock climb, and fly fish (past times of all Montanans...).
