@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library('ggmap')
 library('leaflet')
+library('leaflet.extras')
 library('readxl')
 library('htmltools')
 library('crosstalk')
@@ -26,6 +27,7 @@ leaflet(data=df, width="100%") %>%
   addTiles(group = "OSM (default)") %>% 
   addProviderTiles('Esri.WorldImagery', group="ESRI.WorldImagery") %>%
   addProviderTiles("CartoDB.PositronOnlyLabels", group="ESRI.WorldImagery") %>%
+  addFullscreenControl(pseudoFullscreen = TRUE) %>%
   addCircleMarkers(~Longitude, ~Latitude, 
              radius=~sqrt(Population)/5, 
              label = ~htmlEscape(Villages),
