@@ -343,25 +343,13 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    3 min read
   </span>
   
 
   
   
 
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fa fa-folder"></i>
-    
-    <a href="/categories/r">R</a
-    >
-    
-  </span>
-  
   
 
   
@@ -372,17 +360,17 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
   
   
   <h3 class="article-title" itemprop="headline">
-    <a href="/post/4-jan-18-villagemapping/" itemprop="url">4-Jan-18-mapping.village.locations</a>
+    <a href="/post/8-mar-18-mapping.roys.triangle/" itemprop="url">Mapping Roy&#39;s Triangle</a>
   </h3>
   <div class="article-style" itemprop="articleBody">
     
     Mapping VillagesThis is a bit of code mapping each of the study villages in Mali.
 Making the data frame of points:
-library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),latitude = c(13.6586, 14.16762, 13.91442, 13.61576, 14.223473, 13.9513, 13.9289, 13.0791, 13.688050, 13.599830, 12.683870, 10.42, 14.5476),longitude = c(-7.21471, -7.22793, -6.34382, -7.03689, -6.051057, -6.
+library(&#39;ggmap&#39;)## Loading required package: ggplot2library(&#39;leaflet&#39;)library(&#39;readxl&#39;)library(&#39;htmltools&#39;)library(&#39;crosstalk&#39;)df &lt;- read_xlsx(&quot;C:/OneDrive/OneDrive - National Institutes of Health/Mali 2016/Copy of Villages of triangle.xlsx&quot;)leaflet(data=df, width=&quot;100%&quot;) %&gt;% addTiles(group = &quot;OSM (default)&quot;) %&gt;% addProviderTiles(&#39;Esri.WorldImagery&#39;, group=&quot;ESRI.WorldImagery&quot;) %&gt;%addProviderTiles(&quot;CartoDB.PositronOnlyLabels&quot;, group=&quot;ESRI.WorldImagery&quot;) %&gt;%addCircleMarkers(~Longitude, ~Latitude, radius=~sqrt(Population)/5, label = ~htmlEscape(Villages),labelOptions = lapply(1:nrow(df), function(x) {labelOptions(opacity=0.
     
   </div>
   <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/4-jan-18-villagemapping/" class="btn btn-primary btn-outline">
+    <a href="/post/8-mar-18-mapping.roys.triangle/" class="btn btn-primary btn-outline">
       CONTINUE READING
     </a>
   </p>
