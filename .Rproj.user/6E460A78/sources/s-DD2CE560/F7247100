@@ -5,16 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3748053034",
+    "hash" : "0",
     "id" : "F7247100",
-    "lastKnownWriteTime" : 1520536933,
-    "last_content_update" : 1520536933165,
+    "lastKnownWriteTime" : 1520541169,
+    "last_content_update" : 1520541169866,
     "path" : "~/GitHub/bkraj/content/post/2018-03-08-mapping-roy-s-triangle.Rmd",
     "project_path" : "content/post/2018-03-08-mapping-roy-s-triangle.Rmd",
     "properties" : {
-        "cursorPosition" : "17,24",
+        "cursorPosition" : "41,53",
         "last_setup_crc32" : "DD2CE560bb338d19",
-        "scrollLine" : "12"
+        "scrollLine" : "4"
     },
     "relative_order" : 9,
     "source_on_save" : false,

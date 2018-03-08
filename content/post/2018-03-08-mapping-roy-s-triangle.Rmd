@@ -29,10 +29,10 @@ leaflet(data=df, width="100%") %>%
   addProviderTiles("CartoDB.PositronOnlyLabels", group="ESRI.WorldImagery") %>%
   addFullscreenControl(pseudoFullscreen = TRUE) %>%
   addCircleMarkers(~Longitude, ~Latitude, 
-             radius=~sqrt(Population)/5, 
+             radius=3, 
              label = ~htmlEscape(Villages),
              labelOptions = lapply(1:nrow(df), function(x) {
-               labelOptions(opacity=0.4, noHide = T,
+               labelOptions(opacity=1, noHide = T,
                             direction = 'right', textOnly = TRUE)
              }),
              popup = paste("<b>Village:</b>", df$Villages, "<br>","<b>Population:</b>", df$Population),

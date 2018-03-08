@@ -7,7 +7,7 @@ categories:
   - R
 tags:
   - Mali
-  - M
+  - R
   - R Markdown
 ---
 
