@@ -11,11 +11,7 @@ tags: []
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Mapping Villages
-
-This is a bit of code mapping each of the study villages in Mali.
-
-Making the data frame of points:
+## Migration Triangle
 ```{r}
 library('ggmap')
 library('leaflet')
