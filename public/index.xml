@@ -253,7 +253,7 @@ kable(df)&lt;/code&gt;&lt;/pre&gt;
       <guid>/talk/longread/</guid>
       <description>&lt;iframe src=&#34;https://rawgit.com/benkraj/talks/master/JournalClub.LongRead/23-Feb-17-journal.club.html#1&#34; width=&#34;900&#34; height=&#34;780&#34; style=&#34;border: none;&#34;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;This was a talk I gave to our journal club on the use of long-read sequencers for genomics and RNA analysis. I follow a few of the people who post a lot of nanopore on twitter, and wanted to know a bit more about the technology (also to try out using &lt;a href=&#34;https://yihui.name/en/2017/08/why-xaringan-remark-js/&#34; target=&#34;_blank&#34;&gt;Xaringan&lt;/a&gt; for making presentations).&lt;/p&gt;
+&lt;p&gt;This was a talk I gave to our journal club on the use of long-read sequencers for genomics and RNA analysis. I follow a few of the nanopore people on twitter, their &lt;a href=&#34;https://twitter.com/nanopore/status/961555827181150208&#34; target=&#34;_blank&#34;&gt;yearly conference (at least via hashtag)&lt;/a&gt;, and wanted to know a bit more about the technology. I also used this as an opportunity to try out using &lt;a href=&#34;https://yihui.name/en/2017/08/why-xaringan-remark-js/&#34; target=&#34;_blank&#34;&gt;Xaringan&lt;/a&gt; for making presentations. This is an html5/R markdown based presentation-making alternative to powerpoint. I think I&amp;rsquo;ll keep this in the workflow!&lt;/p&gt;
 </description>
     </item>
     
