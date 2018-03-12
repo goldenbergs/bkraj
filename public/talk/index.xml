@@ -12,13 +12,13 @@
     
     <item>
       <title>Journal Club -- A short overview of portable long read sequencers.</title>
-      <link>/talk/example-talk/</link>
+      <link>/talk/longread/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
-      <guid>/talk/example-talk/</guid>
+      <guid>/talk/longread/</guid>
       <description>&lt;iframe src=&#34;https://rawgit.com/benkraj/talks/master/JournalClub.LongRead/23-Feb-17-journal.club.html#1&#34; width=&#34;900&#34; height=&#34;780&#34; style=&#34;border: none;&#34;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;This was a talk I gave to our journal club on the use of long-read sequencers for genomics and RNA analysis.&lt;/p&gt;
+&lt;p&gt;This was a talk I gave to our journal club on the use of long-read sequencers for genomics and RNA analysis. I follow a few of the people who post a lot of nanopore on twitter, and wanted to know a bit more about the technology (also to try out using &lt;a href=&#34;https://yihui.name/en/2017/08/why-xaringan-remark-js/&#34; target=&#34;_blank&#34;&gt;Xaringan&lt;/a&gt; for making presentations).&lt;/p&gt;
 </description>
     </item>
     
