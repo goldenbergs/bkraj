@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1522689783679.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3979529061",
+    "id" : "80FC0CB2",
+    "lastKnownWriteTime" : 1522689830,
+    "last_content_update" : 1522689830058,
+    "path" : "~/GitHub/bkraj/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+        "cursorPosition" : "264,0",
+        "scrollLine" : "248"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}
