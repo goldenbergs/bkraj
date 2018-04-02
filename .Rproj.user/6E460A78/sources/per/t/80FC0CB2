@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3979529061",
+    "hash" : "2535719795",
     "id" : "80FC0CB2",
-    "lastKnownWriteTime" : 1522689830,
-    "last_content_update" : 1522689830058,
+    "lastKnownWriteTime" : 1522690318,
+    "last_content_update" : 1522690318254,
     "path" : "~/GitHub/bkraj/config.toml",
     "project_path" : "config.toml",
     "properties" : {
-        "cursorPosition" : "264,0",
-        "scrollLine" : "248"
+        "cursorPosition" : "267,18",
+        "scrollLine" : "257"
     },
     "relative_order" : 3,
     "source_on_save" : false,
