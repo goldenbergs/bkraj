@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "778270171",
     "id" : "B69C9E87",
-    "lastKnownWriteTime" : 1522361651,
-    "last_content_update" : 1522361651,
+    "lastKnownWriteTime" : 1522767243,
+    "last_content_update" : 1522767243765,
     "path" : "~/GitHub/bkraj/content/project/microbiome.md",
     "project_path" : "content/project/microbiome.md",
     "properties" : {
-        "cursorPosition" : "32,55",
-        "scrollLine" : "0"
+        "cursorPosition" : "8,11",
+        "scrollLine" : "4"
     },
     "relative_order" : 3,
     "source_on_save" : false,

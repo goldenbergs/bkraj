@@ -6,7 +6,7 @@ date = "2018-02-25"
 title = "Seasonal change in the microbiome of *Anopheles coluzzii*"
 
 # Project summary to display on homepage.
-summary = "Using"
+summary = ""
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "Fig4a.jpg"

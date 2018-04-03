@@ -6,7 +6,7 @@ date = "2018-04-03"
 title = "Using historic data to map malaria seasonality"
 
 # Project summary to display on homepage.
-summary = "Using"
+summary = ""
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "mali.small.jpg"
