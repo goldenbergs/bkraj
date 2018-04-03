@@ -38,4 +38,4 @@ weight = 5
 +++
 
 # Biography
-I am a vector ecologist and microbiologist in the Laboratory of Malaria and Vector Research at the NIH. I earned my doctorate in microbiology at Colorado State University studying the use of ivermectin as a malaria control measure in West Africa. My current work focuses on the dry-season persistence mechanisms of *Anopheles* spp. mosquitoes in Mali. Outside of work I like to ski, rock climb, and fly fish (past times of all Montanans...).
+I am a vector ecologist and microbiologist who is broadly interested in medical entomology that never strays too far from natural systems. My doctorate work was on the development of tools to help study the use of ivermectin as a malaria control measure in West Africa (Senegal, Liberia, and Burkina Faso), and my current work focuses on the dry-season persistence mechanisms of *Anopheles* spp. mosquitoes in Mali. Outside of work I like to ski, rock climb, and fly fish (past times of all Montanans...).

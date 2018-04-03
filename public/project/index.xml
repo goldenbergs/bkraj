@@ -7,8 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Ben Krajacich</copyright>
-    <lastBuildDate>Sun, 25 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/project/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Using historic data to map malaria seasonality</title>
+      <link>/project/seasonal.malaria/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/project/seasonal.malaria/</guid>
+      <description>&lt;p&gt;A recent publication from &lt;a href=&#34;https://www.nature.com/articles/nature24059&#34; target=&#34;_blank&#34;&gt;Snow &lt;em&gt;et al.&lt;/em&gt;&lt;/a&gt; put forth a huge data set on the prevalence of &lt;em&gt;Plasmodium falciparum&lt;/em&gt; malaria in sub-Saharan Africa since 1900.&lt;/p&gt;
+
+&lt;p&gt;A big portion of the work I currently focus on is related to the seasonal transmission dynamics of malaria, hinging on the dry-season behavior of &lt;em&gt;Anopheles coluzzii&lt;/em&gt; and &lt;em&gt;Anopheles gambiae&lt;/em&gt; s.s. mosquitoes in Mali. I wanted to see if from this data set I could get a better handle on defining the transmission season in Mali and across Africa ( &lt;a href=&#34;https://www.nature.com/articles/nature15535&#34; target=&#34;_blank&#34;&gt;especially as much of the malaria transmission is seasonal across Africa&lt;/a&gt; ).&lt;/p&gt;
+
+&lt;p&gt;Watch this space as I flesh out some of the ideas, but as a brief snippet here is a k-nearest neighbor smoothed figure of monthly malaria transmission using data from 1990 on.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/posts/16-OCt-17.allknn.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Seasonal change in the microbiome of *Anopheles coluzzii*</title>

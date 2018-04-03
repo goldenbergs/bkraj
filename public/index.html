@@ -335,7 +335,7 @@
 
 <h1 id="biography">Biography</h1>
 
-<p>I am a vector ecologist and microbiologist in the Laboratory of Malaria and Vector Research at the NIH. I earned my doctorate in microbiology at Colorado State University studying the use of ivermectin as a malaria control measure in West Africa. My current work focuses on the dry-season persistence mechanisms of <em>Anopheles</em> spp. mosquitoes in Mali. Outside of work I like to ski, rock climb, and fly fish (past times of all Montanans&hellip;).</p>
+<p>I am a vector ecologist and microbiologist who is broadly interested in medical entomology that never strays too far from natural systems. My doctorate work was on the development of tools to help study the use of ivermectin as a malaria control measure in West Africa (Senegal, Liberia, and Burkina Faso), and my current work focuses on the dry-season persistence mechanisms of <em>Anopheles</em> spp. mosquitoes in Mali. Outside of work I like to ski, rock climb, and fly fish (past times of all Montanans&hellip;).</p>
 
 
     <div class="row">
@@ -849,75 +849,6 @@
 
         
         
-
-      
-      
-        
-        
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2018-03-08 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
-      Mar 8, 2018
-    </time>
-  </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Ben Krajacich">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-
-  
-  
-  
-  
-
-  
-
-</div>
-
-
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/mapping-roy-s-triangle/" itemprop="url">Mapping Roy&#39;s Triangle</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    Migration Trianglelibrary(&#39;ggmap&#39;)## Loading required package: ggplot2library(&#39;leaflet&#39;)library(&#39;leaflet.extras&#39;)library(&#39;readxl&#39;)library(&#39;htmltools&#39;)library(&#39;crosstalk&#39;)df &lt;- read_xlsx(&quot;C:/OneDrive/OneDrive - National Institutes of Health/Mali 2016/Copy of Villages of triangle.xlsx&quot;)leaflet(data=df, width=&quot;100%&quot;) %&gt;% addTiles(group = &quot;OSM (default)&quot;) %&gt;% addProviderTiles(&#39;Esri.WorldImagery&#39;, group=&quot;ESRI.WorldImagery&quot;) %&gt;%addProviderTiles(&quot;CartoDB.PositronOnlyLabels&quot;, group=&quot;ESRI.WorldImagery&quot;) %&gt;%addFullscreenControl(pseudoFullscreen = TRUE) %&gt;%addCircleMarkers(~Longitude, ~Latitude, radius=3, label = ~htmlEscape(Villages),labelOptions = lapply(1:nrow(df), function(x) {labelOptions(opacity=1, noHide = T,direction = &#39;right&#39;, textOnly = TRUE)}),popup = paste(&quot;&lt;b&gt;Village:&lt;/b&gt;&quot;, df$Villages, &quot;&lt;br&gt;&quot;,&quot;&lt;b&gt;Population:&lt;/b&gt;&quot;, df$Population),popupOptions = popupOptions(opacity=1, bringToTop = TRUE)) %&gt;%addLayersControl(baseGroups = c(&quot;OSM (default)&quot;, &quot;ESRI.
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/mapping-roy-s-triangle/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-
-      
-
-        
-
-        
-        
-
-        
-        
           
       
           
@@ -1056,6 +987,26 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
       
       
       
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item seasonality malaria">
+        <div class="card">
+          
+          <a href="/project/seasonal.malaria/" title="" class="card-image hover-overlay"
+             >
+            <img src="/img/mali.small.jpg" alt="" class="img-responsive">
+          </a>
+          
+          <div class="card-text">
+            <h4><a href="/project/seasonal.malaria/" >Using historic data to map malaria seasonality</a></h4>
+            <div class="card-desription">
+              <p>Using</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item microbiome">
         <div class="card">
           
@@ -1146,7 +1097,21 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
           
           
           
+          <a href="/tags/malaria" style="font-size:0.8rem">malaria</a>
+        
+          
+          
+          
+          
+          
           <a href="/tags/microbiome" style="font-size:0.8rem">microbiome</a>
+        
+          
+          
+          
+          
+          
+          <a href="/tags/seasonality" style="font-size:0.8rem">seasonality</a>
         
       </div>
     

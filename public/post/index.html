@@ -263,62 +263,6 @@
 
   <span class="article-date">
     
-    <time datetime="2018-03-08 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
-      Mar 8, 2018
-    </time>
-  </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Ben Krajacich">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-
-  
-  
-  
-  
-
-  
-
-</div>
-
-
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/mapping-roy-s-triangle/" itemprop="url">Mapping Roy&#39;s Triangle</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    Migration Trianglelibrary(&#39;ggmap&#39;)## Loading required package: ggplot2library(&#39;leaflet&#39;)library(&#39;leaflet.extras&#39;)library(&#39;readxl&#39;)library(&#39;htmltools&#39;)library(&#39;crosstalk&#39;)df &lt;- read_xlsx(&quot;C:/OneDrive/OneDrive - National Institutes of Health/Mali 2016/Copy of Villages of triangle.xlsx&quot;)leaflet(data=df, width=&quot;100%&quot;) %&gt;% addTiles(group = &quot;OSM (default)&quot;) %&gt;% addProviderTiles(&#39;Esri.WorldImagery&#39;, group=&quot;ESRI.WorldImagery&quot;) %&gt;%addProviderTiles(&quot;CartoDB.PositronOnlyLabels&quot;, group=&quot;ESRI.WorldImagery&quot;) %&gt;%addFullscreenControl(pseudoFullscreen = TRUE) %&gt;%addCircleMarkers(~Longitude, ~Latitude, radius=3, label = ~htmlEscape(Villages),labelOptions = lapply(1:nrow(df), function(x) {labelOptions(opacity=1, noHide = T,direction = &#39;right&#39;, textOnly = TRUE)}),popup = paste(&quot;&lt;b&gt;Village:&lt;/b&gt;&quot;, df$Villages, &quot;&lt;br&gt;&quot;,&quot;&lt;b&gt;Population:&lt;/b&gt;&quot;, df$Population),popupOptions = popupOptions(opacity=1, bringToTop = TRUE)) %&gt;%addLayersControl(baseGroups = c(&quot;OSM (default)&quot;, &quot;ESRI.
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/mapping-roy-s-triangle/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-  
-    
-    
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
     <time datetime="2018-02-25 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
       Feb 25, 2018
     </time>
