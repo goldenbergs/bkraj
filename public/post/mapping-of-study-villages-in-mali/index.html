@@ -17,9 +17,10 @@
       
     
   
-  <meta name="description" content="Mapping VillagesThis is a bit of code mapping each of the study villages in Mali.
-Making the data frame of points:
-library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),latitude = c(13.6586, 14.16762, 13.91442, 13.61576, 14.223473, 13.9513, 13.9289, 13.0791, 13.688050, 13.599830, 12.683870, 10.42, 14.5476),longitude = c(-7.21471, -7.22793, -6.34382, -7.03689, -6.051057, -6.">
+  <meta name="description" content="Mapping VillagesBecause what good is a website if you can’t put something interactive on it?
+This is a bit of code mapping some of our study villages in Mali. It uses the leaflet package for visualization.
+First, make a data frame of points:
+library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),latitude = c(13.">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/mapping-of-study-villages-in-mali/">
@@ -94,9 +95,10 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
   <meta property="og:site_name" content="Ben Krajacich">
   <meta property="og:url" content="/post/mapping-of-study-villages-in-mali/">
   <meta property="og:title" content="Mapping of Study Villages in Mali | Ben Krajacich">
-  <meta property="og:description" content="Mapping VillagesThis is a bit of code mapping each of the study villages in Mali.
-Making the data frame of points:
-library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),latitude = c(13.6586, 14.16762, 13.91442, 13.61576, 14.223473, 13.9513, 13.9289, 13.0791, 13.688050, 13.599830, 12.683870, 10.42, 14.5476),longitude = c(-7.21471, -7.22793, -6.34382, -7.03689, -6.051057, -6.">
+  <meta property="og:description" content="Mapping VillagesBecause what good is a website if you can’t put something interactive on it?
+This is a bit of code mapping some of our study villages in Mali. It uses the leaflet package for visualization.
+First, make a data frame of points:
+library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),latitude = c(13.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-02-25T00:00:00&#43;00:00">
@@ -183,6 +185,25 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
         
 
         <li class="nav-item">
+          <a href="/#talks">
+            
+            <span>Talks</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
           <a href="/#posts">
             
             <span>Posts</span>
@@ -202,9 +223,9 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
         
 
         <li class="nav-item">
-          <a href="/#talks">
+          <a href="/#projects">
             
-            <span>Talks</span>
+            <span>Projects</span>
             
           </a>
         </li>
@@ -265,7 +286,7 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    2 min read
   </span>
   
 
@@ -350,8 +371,9 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
 
 <div id="mapping-villages" class="section level2">
 <h2>Mapping Villages</h2>
-<p>This is a bit of code mapping each of the study villages in Mali.</p>
-<p>Making the data frame of points:</p>
+<p>Because what good is a website if you can’t put something interactive on it?</p>
+<p>This is a bit of code mapping some of our study villages in Mali. It uses the <a href="https://rstudio.github.io/leaflet/">leaflet</a> package for visualization.</p>
+<p>First, make a data frame of points:</p>
 <pre class="r"><code>library(&#39;leaflet&#39;)
 library(&#39;knitr&#39;)
 df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, 
@@ -440,9 +462,7 @@ kable(df)</code></pre>
 </tr>
 </tbody>
 </table>
-</div>
-<div id="map-of-village-locations" class="section level1">
-<h1>Map of Village locations</h1>
+<p>Then create the leaflet app:</p>
 <pre class="r"><code>leaflet(data=df) %&gt;% 
   addTiles(group = &quot;OSM (default)&quot;) %&gt;% 
   addProviderTiles(&#39;Esri.WorldImagery&#39;, group=&quot;ESRI.WorldImagery&quot;) %&gt;%
@@ -454,6 +474,9 @@ kable(df)</code></pre>
   ) </code></pre>
 <div id="htmlwidget-1" style="width:672px;height:480px;" class="leaflet html-widget"></div>
 <script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM (default)",{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"ESRI.WorldImagery",{"errorTileUrl":"","noWrap":false,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false}]},{"method":"addProviderTiles","args":["CartoDB.PositronOnlyLabels",null,"ESRI.WorldImagery",{"errorTileUrl":"","noWrap":false,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false}]},{"method":"addMarkers","args":[[13.6586,14.16762,13.91442,13.61576,14.223473,13.9513,13.9289,13.0791,13.68805,13.59983,12.68387,10.42,14.5476],[-7.21471,-7.22793,-6.34382,-7.03689,-6.051057,-6.9708,-6.7094,-8.3589,-7.221029,-7.192859,-7.840419,-5.87,-9.31067],null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Thierola","Siguima","Markabougou","Dallowere","Niono","Konani","Diessourouna","Torodo","Zanga","M'Piabougou","N'Gabakoro","Bia","Guemou"],null,null,null,null,null,null]},{"method":"addLayersControl","args":[["OSM (default)","ESRI.WorldImagery"],[],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[10.42,14.5476],"lng":[-9.31067,-5.87]}},"evals":[],"jsHooks":[]}</script>
+<p>This includes two different tiles that you can toggle (Esri.WorldImagery and CartoDB). If you want more tiles— look <a href="http://leaflet-extras.github.io/leaflet-providers/preview/">here</a>.</p>
+<p>The addLayersControl option provides the toggle itself.</p>
+<p>These maps are rather customizable, but I have noticed that there is limited ability to deal with dense points (via either something analogous to ggrepel with ggplot or fading labels as you see in google earth). Maybe something to look into in the future.</p>
 </div>
 
     </div>
@@ -466,6 +489,8 @@ kable(df)</code></pre>
   <a class="btn btn-primary btn-outline" href="/tags/mali">Mali</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/r">R</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/mapping">Mapping</a>
   
   <a class="btn btn-primary btn-outline" href="/tags/r-markdown">R Markdown</a>
   

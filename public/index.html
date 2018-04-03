@@ -173,6 +173,25 @@
         
 
         <li class="nav-item">
+          <a href="/#talks" data-target="#talks">
+            
+            <span>Talks</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
           <a href="/#posts" data-target="#posts">
             
             <span>Posts</span>
@@ -192,9 +211,9 @@
         
 
         <li class="nav-item">
-          <a href="/#talks" data-target="#talks">
+          <a href="/#projects" data-target="#projects">
             
-            <span>Talks</span>
+            <span>Projects</span>
             
           </a>
         </li>
@@ -412,6 +431,45 @@
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span itemprop="author">
+    <strong>Benjamin J Krajacich</strong>, Diana L. Huestis, Adama Dao, Alpha S. Yaro, Moussa Diallo, Asha Krishna, Jiannong Xu, Tovi Lehmann</span>.
+  <a href="/publication/microbiome/" itemprop="name">Investigation of the seasonal microbiome of Anopheles coluzzii in Mali</a>.
+  PLOS ONE,
+  2018.
+  <p>
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0194899" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="/project/microbiome/">
+  Project
+</a>
+
+
+
+
+
+
+
+</p>
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="author">
     <strong>Benjamin J. Krajacich</strong>, Jacob I. Meyers, Haoues Alout, Roch K. Dabiré, Floyd E. Dowell, Brian D. Foy</span>.
   <a href="/publication/nirs/" itemprop="name">Analysis of near infrared spectra for age-grading of wild populations of Anopheles gambiae</a>.
   Parasites and Vectors,
@@ -433,45 +491,6 @@
 
 
 <a class="btn btn-primary btn-outline btn-xs" href="/project/NIRS/">
-  Project
-</a>
-
-
-
-
-
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    <strong>Benjamin J Krajacich</strong>, Diana L. Huestis, Adama Dao, Alpha S. Yaro, Moussa Diallo, Asha Krishna, Jiannong Xu, Tovi Lehmann</span>.
-  <a href="/publication/microbiome/" itemprop="name">Investigation of the seasonal microbiome of Anopheles coluzzii in Mali</a>.
-  PeerJ Preprint,
-  2017.
-  <p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://peerj.com/preprints/3391.pdf" target="_blank" rel="noopener">
-  Preprint
-</a>
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/project/microbiome/">
   Project
 </a>
 
@@ -905,6 +924,8 @@
       
           
       
+          
+      
 
       
       
@@ -929,7 +950,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    2 min read
   </span>
   
 
@@ -962,9 +983,10 @@
   </h3>
   <div class="article-style" itemprop="articleBody">
     
-    Mapping VillagesThis is a bit of code mapping each of the study villages in Mali.
-Making the data frame of points:
-library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),latitude = c(13.6586, 14.16762, 13.91442, 13.61576, 14.223473, 13.9513, 13.9289, 13.0791, 13.688050, 13.599830, 12.683870, 10.42, 14.5476),longitude = c(-7.21471, -7.22793, -6.34382, -7.03689, -6.051057, -6.
+    Mapping VillagesBecause what good is a website if you can’t put something interactive on it?
+This is a bit of code mapping some of our study villages in Mali. It uses the leaflet package for visualization.
+First, make a data frame of points:
+library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&quot;Thierola&quot;, &quot;Siguima&quot;, &quot;Markabougou&quot;, &quot;Dallowere&quot;, &quot;Niono&quot;, &quot;Konani&quot;, &quot;Diessourouna&quot;, &quot;Torodo&quot;, &quot;Zanga&quot;, &quot;M&#39;Piabougou&quot;, &quot;N&#39;Gabakoro&quot;, &quot;Bia&quot;, &quot;Guemou&quot;),latitude = c(13.
     
   </div>
   <p class="read-more" itemprop="mainEntityOfPage">
@@ -1034,41 +1056,18 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
       
       
       
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item deep-learning">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item microbiome">
         <div class="card">
           
-          <a href="/project/deep-learning/" title="" class="card-image hover-overlay"
+          <a href="/project/microbiome/" title="" class="card-image hover-overlay"
              >
-            <img src="/img/bubbles.jpg" alt="" class="img-responsive">
+            <img src="/img/Fig4a.jpg" alt="" class="img-responsive">
           </a>
           
           <div class="card-text">
-            <h4><a href="/project/deep-learning/" >Seasonal change in the microbiome of *Anopheles coluzzii*</a></h4>
+            <h4><a href="/project/microbiome/" >Seasonal change in the microbiome of *Anopheles coluzzii*</a></h4>
             <div class="card-desription">
               <p>Using</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item Anopheles aestivation dry-season ecology">
-        <div class="card">
-          
-          <a href="http://example.org" title="" class="card-image hover-overlay"
-             target="_blank">
-            <img src="/img/boards.jpg" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="http://example.org" target="_blank">Seasonal change in the microbiome of *Anopheles coluzzii*</a></h4>
-            <div class="card-desription">
-              <p>An example of linking directly to an external project website using <code>external_link</code>.</p>
             </div>
           </div>
         </div>
@@ -1119,14 +1118,14 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
           
           
           
-          <a href="/tags/anopheles" style="font-size:0.8rem">Anopheles</a>
+          <a href="/tags/mali" style="font-size:0.8rem">Mali</a>
         
           
           
           
           
           
-          <a href="/tags/mali" style="font-size:0.8rem">Mali</a>
+          <a href="/tags/mapping" style="font-size:0.8rem">Mapping</a>
         
           
           
@@ -1147,21 +1146,7 @@ library(&#39;leaflet&#39;)library(&#39;knitr&#39;)df &lt;- data.frame(site=c(&
           
           
           
-          <a href="/tags/aestivation" style="font-size:0.8rem">aestivation</a>
-        
-          
-          
-          
-          
-          
-          <a href="/tags/deep-learning" style="font-size:0.8rem">deep-learning</a>
-        
-          
-          
-          
-          
-          
-          <a href="/tags/dry-season-ecology" style="font-size:0.8rem">dry-season ecology</a>
+          <a href="/tags/microbiome" style="font-size:0.8rem">microbiome</a>
         
       </div>
     

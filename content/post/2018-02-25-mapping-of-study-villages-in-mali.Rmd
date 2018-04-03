@@ -8,6 +8,7 @@ categories:
 tags:
   - Mali
   - R
+  - Mapping
   - R Markdown
 ---
 
@@ -18,9 +19,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Mapping Villages
 
-This is a bit of code mapping each of the study villages in Mali.
+Because what good is a website if you can't put something interactive on it?
 
-Making the data frame of points:
+This is a bit of code mapping some of our study villages in Mali. It uses the [leaflet](https://rstudio.github.io/leaflet/) package for visualization.
+
+
+First, make a data frame of points:
 ```{r}
 library('leaflet')
 library('knitr')
@@ -37,7 +41,7 @@ kable(df)
 ```
 
 
-# Map of Village locations
+Then create the leaflet app:
 
 ```{r}
 leaflet(data=df) %>% 
@@ -52,3 +56,8 @@ leaflet(data=df) %>%
 
 ```
 
+This includes two different tiles that you can toggle (Esri.WorldImagery and CartoDB). If you want more tiles--- look [here](http://leaflet-extras.github.io/leaflet-providers/preview/).
+
+The addLayersControl option provides the toggle itself.
+
+These maps are rather customizable, but I have noticed that there is limited ability to deal with dense points (via either something analogous to ggrepel with ggplot or fading labels as you see in google earth). Maybe something to look into in the future.

@@ -11,22 +11,22 @@
     <atom:link href="/publication/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Investigation of the seasonal microbiome of Anopheles coluzzii in Mali</title>
+      <link>/publication/microbiome/</link>
+      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/microbiome/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Analysis of near infrared spectra for age-grading of wild populations of Anopheles gambiae</title>
       <link>/publication/nirs/</link>
       <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/publication/nirs/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Investigation of the seasonal microbiome of Anopheles coluzzii in Mali</title>
-      <link>/publication/microbiome/</link>
-      <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/microbiome/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
     </item>
     
     <item>

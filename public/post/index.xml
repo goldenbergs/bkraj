@@ -91,8 +91,9 @@ leaflet(data=df, width=&amp;quot;100%&amp;quot;) %&amp;gt;%
 
 &lt;div id=&#34;mapping-villages&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Mapping Villages&lt;/h2&gt;
-&lt;p&gt;This is a bit of code mapping each of the study villages in Mali.&lt;/p&gt;
-&lt;p&gt;Making the data frame of points:&lt;/p&gt;
+&lt;p&gt;Because what good is a website if you can’t put something interactive on it?&lt;/p&gt;
+&lt;p&gt;This is a bit of code mapping some of our study villages in Mali. It uses the &lt;a href=&#34;https://rstudio.github.io/leaflet/&#34;&gt;leaflet&lt;/a&gt; package for visualization.&lt;/p&gt;
+&lt;p&gt;First, make a data frame of points:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(&amp;#39;leaflet&amp;#39;)
 library(&amp;#39;knitr&amp;#39;)
 df &amp;lt;- data.frame(site=c(&amp;quot;Thierola&amp;quot;, &amp;quot;Siguima&amp;quot;, &amp;quot;Markabougou&amp;quot;, &amp;quot;Dallowere&amp;quot;, &amp;quot;Niono&amp;quot;, 
@@ -181,9 +182,7 @@ kable(df)&lt;/code&gt;&lt;/pre&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;/div&gt;
-&lt;div id=&#34;map-of-village-locations&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Map of Village locations&lt;/h1&gt;
+&lt;p&gt;Then create the leaflet app:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;leaflet(data=df) %&amp;gt;% 
   addTiles(group = &amp;quot;OSM (default)&amp;quot;) %&amp;gt;% 
   addProviderTiles(&amp;#39;Esri.WorldImagery&amp;#39;, group=&amp;quot;ESRI.WorldImagery&amp;quot;) %&amp;gt;%
@@ -195,6 +194,9 @@ kable(df)&lt;/code&gt;&lt;/pre&gt;
   ) &lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;leaflet html-widget&#34;&gt;&lt;/div&gt;
 &lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;options&#34;:{&#34;crs&#34;:{&#34;crsClass&#34;:&#34;L.CRS.EPSG3857&#34;,&#34;code&#34;:null,&#34;proj4def&#34;:null,&#34;projectedBounds&#34;:null,&#34;options&#34;:{}}},&#34;calls&#34;:[{&#34;method&#34;:&#34;addTiles&#34;,&#34;args&#34;:[&#34;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#34;,null,&#34;OSM (default)&#34;,{&#34;minZoom&#34;:0,&#34;maxZoom&#34;:18,&#34;maxNativeZoom&#34;:null,&#34;tileSize&#34;:256,&#34;subdomains&#34;:&#34;abc&#34;,&#34;errorTileUrl&#34;:&#34;&#34;,&#34;tms&#34;:false,&#34;continuousWorld&#34;:false,&#34;noWrap&#34;:false,&#34;zoomOffset&#34;:0,&#34;zoomReverse&#34;:false,&#34;opacity&#34;:1,&#34;zIndex&#34;:null,&#34;unloadInvisibleTiles&#34;:null,&#34;updateWhenIdle&#34;:null,&#34;detectRetina&#34;:false,&#34;reuseTiles&#34;:false,&#34;attribution&#34;:&#34;&amp;copy; &lt;a href=\&#34;http://openstreetmap.org\&#34;&gt;OpenStreetMap&lt;\/a&gt; contributors, &lt;a href=\&#34;http://creativecommons.org/licenses/by-sa/2.0/\&#34;&gt;CC-BY-SA&lt;\/a&gt;&#34;}]},{&#34;method&#34;:&#34;addProviderTiles&#34;,&#34;args&#34;:[&#34;Esri.WorldImagery&#34;,null,&#34;ESRI.WorldImagery&#34;,{&#34;errorTileUrl&#34;:&#34;&#34;,&#34;noWrap&#34;:false,&#34;zIndex&#34;:null,&#34;unloadInvisibleTiles&#34;:null,&#34;updateWhenIdle&#34;:null,&#34;detectRetina&#34;:false,&#34;reuseTiles&#34;:false}]},{&#34;method&#34;:&#34;addProviderTiles&#34;,&#34;args&#34;:[&#34;CartoDB.PositronOnlyLabels&#34;,null,&#34;ESRI.WorldImagery&#34;,{&#34;errorTileUrl&#34;:&#34;&#34;,&#34;noWrap&#34;:false,&#34;zIndex&#34;:null,&#34;unloadInvisibleTiles&#34;:null,&#34;updateWhenIdle&#34;:null,&#34;detectRetina&#34;:false,&#34;reuseTiles&#34;:false}]},{&#34;method&#34;:&#34;addMarkers&#34;,&#34;args&#34;:[[13.6586,14.16762,13.91442,13.61576,14.223473,13.9513,13.9289,13.0791,13.68805,13.59983,12.68387,10.42,14.5476],[-7.21471,-7.22793,-6.34382,-7.03689,-6.051057,-6.9708,-6.7094,-8.3589,-7.221029,-7.192859,-7.840419,-5.87,-9.31067],null,null,null,{&#34;clickable&#34;:true,&#34;draggable&#34;:false,&#34;keyboard&#34;:true,&#34;title&#34;:&#34;&#34;,&#34;alt&#34;:&#34;&#34;,&#34;zIndexOffset&#34;:0,&#34;opacity&#34;:1,&#34;riseOnHover&#34;:false,&#34;riseOffset&#34;:250},[&#34;Thierola&#34;,&#34;Siguima&#34;,&#34;Markabougou&#34;,&#34;Dallowere&#34;,&#34;Niono&#34;,&#34;Konani&#34;,&#34;Diessourouna&#34;,&#34;Torodo&#34;,&#34;Zanga&#34;,&#34;M&#39;Piabougou&#34;,&#34;N&#39;Gabakoro&#34;,&#34;Bia&#34;,&#34;Guemou&#34;],null,null,null,null,null,null]},{&#34;method&#34;:&#34;addLayersControl&#34;,&#34;args&#34;:[[&#34;OSM (default)&#34;,&#34;ESRI.WorldImagery&#34;],[],{&#34;collapsed&#34;:false,&#34;autoZIndex&#34;:true,&#34;position&#34;:&#34;topright&#34;}]}],&#34;limits&#34;:{&#34;lat&#34;:[10.42,14.5476],&#34;lng&#34;:[-9.31067,-5.87]}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;p&gt;This includes two different tiles that you can toggle (Esri.WorldImagery and CartoDB). If you want more tiles— look &lt;a href=&#34;http://leaflet-extras.github.io/leaflet-providers/preview/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The addLayersControl option provides the toggle itself.&lt;/p&gt;
+&lt;p&gt;These maps are rather customizable, but I have noticed that there is limited ability to deal with dense points (via either something analogous to ggrepel with ggplot or fading labels as you see in google earth). Maybe something to look into in the future.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

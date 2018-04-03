@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/publication/microbiome/</loc>
+      <lastmod>2018-03-29T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/mapping-roy-s-triangle/</loc>
       <lastmod>2018-03-08T00:00:00+00:00</lastmod>
     </url>
@@ -23,16 +32,7 @@
     
     <url>
     
-      <loc>/project/deep-learning/</loc>
-      <lastmod>2018-02-25T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/project/example-external-project/</loc>
+      <loc>/project/microbiome/</loc>
       <lastmod>2018-02-25T00:00:00+00:00</lastmod>
     </url>
     
@@ -43,15 +43,6 @@
     
       <loc>/publication/nirs/</loc>
       <lastmod>2017-11-07T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/publication/microbiome/</loc>
-      <lastmod>2017-11-03T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -169,27 +160,7 @@
     <url>
     
       <loc>/publication_types/3/</loc>
-      <lastmod>2017-11-03T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/aestivation/</loc>
-      <lastmod>2018-02-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/anopheles/</loc>
-      <lastmod>2018-02-25T00:00:00+00:00</lastmod>
+      <lastmod>2018-03-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -217,27 +188,27 @@
     
     <url>
     
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2018-02-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/dry-season-ecology/</loc>
-      <lastmod>2018-02-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/tags/mali/</loc>
+      <lastmod>2018-02-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/mapping/</loc>
+      <lastmod>2018-02-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/microbiome/</loc>
       <lastmod>2018-02-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
